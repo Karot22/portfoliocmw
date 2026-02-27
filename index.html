@@ -10,7 +10,7 @@
     <h1>Bienvenue sur mon portfolio !</h1>
     <p>
         <input type="checkbox" id="themeSombre" class="themeSombre" />
-        <label for="test1" aria-describedby="label">Thème sombre</label>
+        <label for="themeSombre" aria-describedby="label">Thème sombre</label>
     </p>
    
     <h2>Mes projets</h2>
@@ -18,10 +18,10 @@
 </body>
 <script type="text/javascript"> 
 
-localStorage.setItem("theme", "clair")
+// localStorage.setItem("theme", "clair")
 
-document.querySelector(".themeSombre").addEventListener("click", function (){
-    if (document.getElementById("themeSombre") = checked){
+document.querySelector(".themeSombre").addEventListener("change", function (){
+    if (document.getElementById("themeSombre").checked){
         localStorage.setItem("theme", "sombre");
         changeTheme();
     }
@@ -33,7 +33,7 @@ document.querySelector(".themeSombre").addEventListener("click", function (){
 })
 
 function changeTheme(){
-    if (document.getElementById("themeSombre") = checked){
+    if (document.getElementById("themeSombre").checked){
         document.body.classList.remove("clair");
         document.body.classList.add("sombre");
     } 
