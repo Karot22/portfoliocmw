@@ -23,9 +23,11 @@ localStorage.setItem("theme", "clair")
 document.querySelector(".themeSombre").addEventListener("click", function (){
     if (document.getElementById("themeSombre") = checked){
         localStorage.setItem("theme", "sombre");
+        changeTheme();
     }
     else{
         localStorage.setItem("theme", "clair");
+        changeTheme();
     }
    
 })
