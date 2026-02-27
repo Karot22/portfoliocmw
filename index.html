@@ -58,17 +58,29 @@ function changeTheme(){
 // francais / anglais
 
 var clé = "titre";
+var clé2 = "comp";
+var clé3 = "exp";
+var clé4 = "pl";
 var francais = {"titre":"Mon portfolio", "comp":"Mes compétences", "exp":"Mes expériences professionnelles", "pl":"Bonjour !"};
 var anglais = {"titre" : "My portfolio", "comp":"My skills", "exp":"My professional experience", "pl":"Hello !"};
 
 document.querySelector(".en").addEventListener("change", function (){
     if (document.getElementById("en").checked){
         localStorage.setItem("langue", "anglais");
-        document.querySelector("." + clé).innerHTML = anglais[clé];
+
+        document.querySelector(Object.keys(francais)).innerHTML = Object.keys(anglais);
+        // document.querySelector("." + clé).innerHTML = anglais[clé];
+        // document.querySelector("." + clé2).innerHTML = anglais[clé2];
+        // document.querySelector("." + clé3).innerHTML = anglais[clé3];
+        // document.querySelector("." + clé4).innerHTML = anglais[clé4];
     }
     else{
         localStorage.setItem("langue", "francais");
-        document.querySelector("." + clé).innerHTML = francais[clé];
+        document.querySelector(Object.keys(anglais)).innerHTML = Object.keys(francais);
+        // document.querySelector("." + clé).innerHTML = francais[clé];
+        // document.querySelector("." + clé2).innerHTML = francais[clé2];
+        // document.querySelector("." + clé3).innerHTML = francais[clé3];
+        // document.querySelector("." + clé4).innerHTML = francais[clé4];
     }
 })
 
