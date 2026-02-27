@@ -6,19 +6,29 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio de Marie</title>
 </head>
+
 <body class="clair">
-    <h1>Bienvenue sur mon portfolio !</h1>
+    <h1 class = "titre">Mon portfolio !</h1>
     <p>
         <input type="checkbox" id="themeSombre" class="themeSombre" />
-        <label for="themeSombre" aria-describedby="label">Thème sombre</label>
+        <label for="themeSombre">Thème sombre</label>
+    </p>
+
+    <p>
+        <input type="checkbox" id="en" class="en" />
+        <label for="en">En anglais</label>
     </p>
    
-    <h2>Mes projets</h2>
-    <h2>Mon CV</h2>
+    <h2 class="comp">Mes compétences</h2>
+    <h2 class="exp">Mes expériences professionnelles</h2>
+    <p class="pl">Bonjour !</p>
+
 </body>
 <script type="text/javascript"> 
 
-// localStorage.setItem("theme", "clair")
+// theme sombre / clair
+
+JSON.parse(localStorage.getItem("theme"));
 
 document.querySelector(".themeSombre").addEventListener("change", function (){
     if (document.getElementById("themeSombre").checked){
@@ -41,9 +51,27 @@ function changeTheme(){
         document.body.classList.remove("sombre");
         document.body.classList.add("clair");
     }
-    
+
 
 }
+
+// francais / anglais
+
+var clé = "titre";
+var francais = {"titre":"Mon portfolio", "comp":"Mes compétences", "exp":"Mes expériences professionnelles", "pl":"Bonjour !"};
+var anglais = {"titre" : "My portfolio", "comp":"Mes compétences", "exp":"Mes expériences professionnelles", "pl":"Hello !"};
+
+document.querySelector(".en").addEventListener("change", function (){
+    if (document.getElementById("en").checked){
+        localStorage.setItem("langue", "anglais");
+        document.querySelector("." + clé).innerHTML = anglais[clé];
+    }
+    else{
+        localStorage.setItem("langue", "francais");
+        document.querySelector("." + clé).innerHTML = francais[clé];
+    }
+})
+
 
 
 
