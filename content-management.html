@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Management</title>
+    <link rel="icon" type="image/jpg" href="img/nuage.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="clair">
+    <nav class="background">
+        <div class="align">
+            <a href="index.html"><img id="nuage" src="img/nuage.png"></a>
+            <p class="link"><a href="content-management.html">Expériences professionnelles</a></p>
+            <p class="link"><a href="cv.html">CV</a></p>
+        </div>
+    </nav>
+    <main>
+        <p>
+            <input type="checkbox" id="themeSombre" class="themeSombre" />
+            <label for="themeSombre">Thème sombre</label>
+        </p>
+        <div class="present">
+            <h3 class="nom">Expériences professionnelles</h3>
+            <br>
+            <p class="center">Dans le cadre de deux alternances : une en tant que chargée de contenus web et une autre
+                en tant que chargée de communication, j'ai pu développer de nombreuses compétences dans un contexte
+                professionnel.</p>
+        </div>
+
+        <div class="buttons-exp">
+
+            <button class="exp-btn active" onclick="showExperience('cora', this)">
+                Cora
+            </button>
+
+            <button class="exp-btn" onclick="showExperience('drees', this)">
+                Drees
+            </button>
+
+        </div>
+
+        <br><br>
+
+        <div id="cora" class="experience-content active-content">
+            <div>
+                <p class="center">Dans ma première alternance à Cora en la qualité de chargée de contenus web, j'ai pu
+                    travaillé sur plusieurs fronts : </p>
+                
+                    <br><br>
+
+        <div class="experience-presentation">
+                <h3 class="title-proj">Rédactions de textes, demandes de visuels aux graphistes, puis mise en page de
+                    pages promouvant des Startups partenaires :</h3>
+                <br><br>
+                <p class="title-proj"><a class="lien"
+                        href="https://www.cora.fr/infos-et-services/le-village-des-innovations/edition-2024-nos-startups/la-vie">La
+                        Vie</a></p>
+                <br>
+                <div class="competences">
+                    <iframe src="img/content/la vie.pdf" width="80%" height="700" frameborder="0"
+                        scrolling="yes"></iframe>
+                </div>
+                <br>
+                <br>
+
+                <p class="title-proj"><a class="lien"
+                        href="https://www.cora.fr/infos-et-services/le-village-des-innovations/edition-2024-nos-startups/hoope">Hoope</a>
+                </p>
+                <br>
+                <div class="competences">
+                    <iframe src="img/content/hoope.pdf" width="80%" height="700" frameborder="0"
+                        scrolling="yes"></iframe>
+                </div>
+            </div>
+
+            <br><br>
+
+        </div>
+            <div class="separateur"></div>
+
+
+
+            <div class="experience-presentation">
+                <h3 class="title-proj">Mise à jour HTML et CSS de pages existantes :</h3>
+                <br><br>
+                <p class="title-proj"><a class="lien"
+                        href="https://www.cora.fr/infos-et-services/le-paiement-en-plusieurs-fois/avec-ma-carte-de-financement-cora/ma-carte-au-quotidien">Carte
+                        de fidélité</a></p>
+                <br>
+                <div class="competences">
+                    <iframe src="img/content/carte-fidelite.pdf" width="80%" height="700" frameborder="0"
+                        scrolling="yes"></iframe>
+                </div>
+                <br><br>
+                <p class="title-proj"><a class="lien"
+                        href="https://www.cora.fr/infos-et-services/sinformer/rappel-produit">Rappel produit</a></p>
+                <br>
+                <div class="competences">
+                    <iframe src="img/content/rappel-produit.pdf" width="80%" height="700" frameborder="0"
+                        scrolling="yes"></iframe>
+                </div>
+                <br><br>
+                <p class="title-proj"><a class="lien"
+                        href="https://www.cora.fr/infos-et-services/sinformer/cheques-differes">Chèques différés</a></p>
+                <br>
+                <div class="competences">
+                    <iframe src="img/content/cheques-differes.pdf" width="80%" height="700" frameborder="0"
+                        scrolling="yes"></iframe>
+                </div>
+            </div>
+            <br><br>
+
+
+            <div class="separateur"></div>
+
+
+
+            <div class="experience-presentation">
+                <h3 class="title-proj">Relation avec le service juridique pour les évolutions des différentes conditions
+                </h3>
+                <br>
+                <p class="title-proj"><a class="lien"
+                        href="https://www.cora.fr/infos-et-services/sinformer/cheques-differes">CGV Coradrive</a></p>
+                <br>
+                <div class="competences">
+                    <iframe src="img/content/Conditions générales de vente coradrive.pdf" width="80%" height="700"
+                        frameborder="0" scrolling="yes"></iframe>
+                </div>
+           
+            <br><br>
+            <p class="title-proj"><strong>CMS utilisé : Typo 3</strong></p>
+            <br><br>
+        </div>
+
+            <div class="separateur"></div>
+
+        </div>
+
+
+
+        <div id="drees" class="experience-content">
+
+            <p class="center">Dans mon alternance actuelle à la Drees en tant que chargée de communication, j'ai pu
+                développé de nouvelles compétences et adapté mon expérience précédente aux outils utilisés :
+
+            </p>
+            
+            <br><br>
+
+            <div class="experience-presentation">
+
+                <h3 class="title-proj">
+                    Gestion et administration du site web via le CMS Drupal : création de pages et mise à jour des
+                    contenus
+                </h3>
+
+                <br>
+
+                <p>
+                    A partir d’un document texte transmis par les auteurs d’un communiqué de presse, jeux de données,
+                    panorama… je devais créer une page sur le site et mettre en page le document texte dans le back
+                    office du CMS Drupal.
+                    <br>
+                    <br>
+                    Exemple de page sur laquelle j’ai travaillé : <a class="lien"
+                        href="https://drees.solidarites-sante.gouv.fr/communique-de-presse-jeux-de-donnees/jeux-de-donnees/les-effectifs-salaries-du-secteur-hospitalier">https://drees.solidarites-sante.gouv.fr/communique-de-presse-jeux-de-donnees/jeux-de-donnees/les-effectifs-salaries-du-secteur-hospitalier</a>
+                    <br><br>
+                    J’intervenais également sur des modifications de page à la suite de demandes reçus dans la boite
+                    mail webmestre des auteurs.
+                </p>
+
+                <br><br>
+
+                <p class="title-proj">
+                    <strong>Outils utilisés : CMS Drupal, Word</strong>
+                </p>
+                <br>
+            </div>
+
+
+            <div class="separateur"></div>
+
+            <div class="experience-presentation">
+                
+                <h3 class="title-proj">
+                    Envoi de communiqués de presse et d’avis de diffusion auprès des bases publics et presse via l’outil de campagnes marketing Sarbacane
+                </h3>
+
+                <br>
+
+                <p>
+                    En complément de la création de page sur le site, je devais réaliser un mailing aux bases publics et presse (dans le cas d’envoi embargo). Comme pour la page sur le site, je partais du même document texte pour la mise en page du mailing que je faisais sur l’outil Sarbacane. Une fois le mailing validé, préparation de l’envoi aux bases publics et/ou presse.
+                </p>
+
+            </div>
+
+            <br>
+
+            <div class="separateur"></div>
+
+            <div class="experience-presentation">
+                
+                <h3 class="title-proj">
+                    Intégration et ajout de contenus sur les sites web interne de la Drees (Paco, l’intranet des ministères sociaux et le Sharepoint)
+                </h3>
+
+                <br>
+
+                <p>
+                    J’avais également pour mission d’alimenter les sites web internes de la Drees : 
+                </p>
+                <ul>
+                    <li>L’intranet des ministères sociaux, Paco, en y ajoutant de nouvelles pages annonçant de nouvelles publications ;</li>
+                    <li>Le Sharepoint : mise à jour mensuelle de la page Agenda, présentant l’ensemble des interventions de Dreesiens.</li>
+                </ul>
+                <p>Cela m’a permis de travailler sur d'autres gestionnaires de sites web et de m’adapter en conséquence.</p>
+
+            </div>
+
+            <br>
+
+
+            <div class="separateur"></div>
+
+            <div class="experience-presentation">
+                
+                <h3 class="title-proj">
+                    Réalisation de press books et de revues de presse hebdomadaires via la plateforme de veille médias Tagaday 
+                </h3>
+
+                <br>
+
+                <p>
+                J’avais également pour mission de réaliser des revues de presse à la fin de chaque semaine sur les retombées presse des publications de la semaine précédente puis de les envoyer aux auteurs de ces publications. Pour cela, j’utilisais la plateforme Tagaday où j’avais d’abord suivi une formation pour son utilisation.
+                </p>
+                
+
+            </div>
+                
+            <br>
+
+            <div class="separateur"></div>
+
+            <div class="experience-presentation">
+                
+                <h3 class="title-proj">
+                Participation à la rédaction et mise en page de la charte éditorial du site internet de la Drees
+                </h3>
+
+                <br>
+
+                <p>
+                    Dans le cadre de la récente refonte du site internet de la Drees, j’ai pu participer à l’élaboration de sa charte éditoriale. Cela consistait à rédiger, rassembler, toutes les règles de présentation, rédaction, mise en page du site dans un même Powerpoint.
+                </p>
+                
+
+            </div>
+                
+            <br>
+
+            <div class="separateur"></div>
+
+            <div class="experience-presentation">
+                
+                <h3 class="title-proj">
+                    Refonte et réalisation de la newsletter interne mensuelle
+                </h3>
+
+                <br>
+
+                <p>
+                    J’ai également pu participer à la refonte de la newsletter interne mensuelle. Cette refonte consistait à retravailler la présentation des différentes rubriques tout en conservant une cohérence entre elles. Pour cela, on travaillait sur l’outil SharePoint.
+                    <br>Une fois la nouvelle identité de la newsletter définie, nous avons pu l’appliquer aux envois mensuels en interne permettant de rendre plus fluide la mise en page des différents contenus.
+                </p>
+                
+
+            </div>
+                
+            <br>
+
+            <div class="separateur"></div>
+
+
+
+
+
+
+        </div>
+
+
+
+        <div class="competences">
+            <a href="direction-artistique.html">
+                <img src="img/4.jpg" class="image" style="margin-left: 25%;">
+            </a>
+            <a href="motion-design.html">
+                <img src="img/3.jpg" class="image" style="margin-left: 15%;">
+            </a>
+            <a href="developpement-web.html">
+                <img src="img/1.jpg" class="image" style="margin-left: 10%;">
+            </a>
+            <a href="graphisme.html">
+                <img src="img/2.jpg" class="image">
+            </a>
+        </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <a href="mentions-legales.html">Mentions légales</a>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

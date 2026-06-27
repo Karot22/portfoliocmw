@@ -1,92 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio de Marie</title>
+    <title>Marie Babkine</title>
+    <link rel="icon" type="image/jpg" href="img/nuage.png" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body class="clair">
-    <h1 class = "titre">Mon portfolio !</h1>
-    <p>
+    <nav class="background">
+        <div class="align">
+            <a href="index.html"><img id="nuage" src="img/nuage.png"></a>
+            <p class="link"><a href="content-management.html">Expériences professionnelles</a></p>
+            <p class="link"><a href="cv.html">CV</a></p>
+        </div>
+    </nav>
+    <main>
+
+        <p>
         <input type="checkbox" id="themeSombre" class="themeSombre" />
         <label for="themeSombre">Thème sombre</label>
     </p>
+        <div class="present">
+            <h3 class="nom">Marie <span class="auto-type"></span></h3>
+            <br>
+            <p class="center">Bienvenue sur mon portfolio ! Je suis actuellement en dernière année du master Cultures et Métiers du Web (SHS)
+                <br>à la recherche d'un poste dans la communication digitale à partir de septembre 2026.</p>
+        </div>
+        <br>
+        <h3 class="title-proj">Mes compétences</h3>
+        <br><br>
+            <div>
+                <div class="competences">
+                   <div class="graphisme">
+                    <a href="graphisme.html">
+                        <img src="img/2.jpg" class="image">
+                    </a>
+                    </div>
+                    <div class="da">
+                     <a href="direction-artistique.html">
+                        <img src="img/4.jpg" class="image">
+                     </a>
+                    </div>
+                    </div>
+                    <br><br>
+                    <div class="competences">
+                    <div class="motion">
+                     <a href="motion-design.html">
+                        <img src="img/3.jpg" class="image">
+                     </a>
+                    </div>
+                    <div class="dev">
+                     <a href="developpement-web.html">
+                        <img src="img/1.jpg" class="image">
+                     </a>
+                    </div>
+                </div>
+                <div class="competences">
+                    <div class="content">
+                     <a href="content-management.html">
+                        <img src="img/content.jpg" class="image">
+                     </a>
+                </div>
+            </div>
+            <br><br>
+    </main>
 
-    <p>
-        <input type="checkbox" id="en" class="en" />
-        <label for="en">En anglais</label>
-    </p>
-   
-    <h2 class="comp">Mes compétences</h2>
-    <h2 class="exp">Mes expériences professionnelles</h2>
-    <p class="pl">Bonjour !</p>
+    <footer class="footer">
+        <a href="mentions-legales.html">Mentions légales</a>
+    </footer>
 
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> 
+    <script src="script.js"></script>
 </body>
-<script type="text/javascript"> 
-
-// theme sombre / clair
-
-// JSON.parse(localStorage.getItem("theme"));
-
-document.querySelector(".themeSombre").addEventListener("change", function (){
-    if (document.getElementById("themeSombre").checked){
-        localStorage.setItem("theme", "sombre");
-        changeTheme();
-    }
-    else{
-        localStorage.setItem("theme", "clair");
-        changeTheme();
-    }
-   
-})
-
-function changeTheme(){
-    if (document.getElementById("themeSombre").checked){
-        document.body.classList.remove("clair");
-        document.body.classList.add("sombre");
-    } 
-    else{
-        document.body.classList.remove("sombre");
-        document.body.classList.add("clair");
-    }
-
-
-}
-
-// francais / anglais
-
-var clé = "titre";
-var clé2 = "comp";
-var clé3 = "exp";
-var clé4 = "pl";
-var francais = {"titre":"Mon portfolio", "comp":"Mes compétences", "exp":"Mes expériences professionnelles", "pl":"Bonjour !"};
-var anglais = {"titre" : "My portfolio", "comp":"My skills", "exp":"My professional experience", "pl":"Hello !"};
-
-document.querySelector(".en").addEventListener("change", function (){
-    if (document.getElementById("en").checked){
-        localStorage.setItem("langue", "anglais");
-
-        document.querySelector(Object.keys(francais)).innerHTML = Object.keys(anglais);
-        // document.querySelector("." + clé).innerHTML = anglais[clé];
-        // document.querySelector("." + clé2).innerHTML = anglais[clé2];
-        // document.querySelector("." + clé3).innerHTML = anglais[clé3];
-        // document.querySelector("." + clé4).innerHTML = anglais[clé4];
-    }
-    else{
-        localStorage.setItem("langue", "francais");
-        document.querySelector(Object.keys(anglais)).innerHTML = Object.keys(francais);
-        // document.querySelector("." + clé).innerHTML = francais[clé];
-        // document.querySelector("." + clé2).innerHTML = francais[clé2];
-        // document.querySelector("." + clé3).innerHTML = francais[clé3];
-        // document.querySelector("." + clé4).innerHTML = francais[clé4];
-    }
-})
-
-
-
-
-
-</script>
 </html>
